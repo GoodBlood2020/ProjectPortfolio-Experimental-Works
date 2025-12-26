@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": "nfc-login-001",
+      "title": "NFC Login Key (Prototype)",
+      "description": "Exploring NFC as a tap-to-auth key for lightweight sign-in flows.\n\n### Notes\n- Uses a QR fallback\n- Goal: simple, fast login\n\n> Status: validating threat model\n\nInline code example: `fetch('/api')`",
+      "status": "Experiment",
+      "tags": ["NFC", "Security", "Web"],
+      "date": "2025-12-25",
+      "isDraft": false,
+      "isArchived": false,
+      "isPrivate": false,
+      "images": [
+        { "src": "images/nfc-1.png", "alt": "NFC flow sketch" },
+        { "src": "images/nfc-2.png", "alt": "Prototype UI screenshot" }
+      ],
+      "links": [
+        { "label": "Notes", "url": "https://example.com" },
+        { "label": "Repo", "url": "https://github.com/yourname/yourrepo" }
+      ]
+    },
+    {
+      "id": "private-idea-002",
+      "title": "Unreleased Concept (Private)",
+      "description": "This is a private entry.\n\n- Hidden by default\n- Toggle **Show private** to reveal",
+      "status": "Idea",
+      "tags": ["Concept"],
+      "date": "2025-12-20",
+      "isDraft": true,
+      "isArchived": false,
+      "isPrivate": true,
+      "images": [],
+      "links": []
+    },
+    {
+      "id": "archived-003",
+      "title": "Old Prototype (Archived)",
+      "description": "Kept for reference. No longer maintained.",
+      "status": "Archive",
+      "tags": ["Archive"],
+      "date": "2025-11-01",
+      "isDraft": false,
+      "isArchived": true,
+      "isPrivate": false,
+      "images": ["images/old-prototype.png"],
+      "links": [{ "label": "Writeup", "url": "https://example.com" }]
+    }
+  ]
+}

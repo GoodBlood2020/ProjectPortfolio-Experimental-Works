@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David de la Montombre — Experimental Works</title>
+  <meta name="description" content="Experimental works and prototypes by David de la Montombre." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="wrap">
+    <div class="brandRow">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">DM</div>
+        <div>
+          <h1>David de la Montombre</h1>
+          <p class="sub">Experimental works, prototypes, and notes.</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <input id="search" type="search" placeholder="Search projects…" aria-label="Search projects" />
+        <select id="tagFilter" aria-label="Filter by tag">
+          <option value="">All tags</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="filters">
+      <label class="chip">
+        <input id="showDrafts" type="checkbox" />
+        <span>Show drafts</span>
+      </label>
+
+      <label class="chip">
+        <input id="showArchived" type="checkbox" />
+        <span>Show archived</span>
+      </label>
+
+      <label class="chip">
+        <input id="showPrivate" type="checkbox" />
+        <span>Show private</span>
+      </label>
+
+      <span class="spacer"></span>
+
+      <span id="count" class="metaText">0 projects</span>
+      <span class="metaDot">•</span>
+      <a class="link" id="rssLink" href="#" target="_blank" rel="noreferrer">RSS</a>
+      <span class="metaDot">•</span>
+      <a class="link" href="data.json" target="_blank" rel="noreferrer">Data</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="grid" class="grid" aria-label="Project list"></section>
+
+    <footer class="footer">
+      <p>
+        Update by editing <code>data.json</code> (and dropping screenshots into <code>/images</code>).
+      </p>
+    </footer>
+  </main>
+
+  <template id="cardTpl">
+    <article class="card">
+      <div class="cardTop">
+        <div class="cardTitle">
+          <h2 class="title"></h2>
+          <div class="badges"></div>
+        </div>
+        <div class="date"></div>
+      </div>
+
+      <div class="galleryWrap hide">
+        <div class="gallery"></div>
+      </div>
+
+      <div class="desc md"></div>
+
+      <div class="tags"></div>
+      <div class="links"></div>
+    </article>
+  </template>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
